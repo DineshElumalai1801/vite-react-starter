@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Docker Build') {
             steps {
-                bat 'docker build -t react'
+                bat 'docker build -t react .'
             }
         }
         stage ('Docker Run') {
