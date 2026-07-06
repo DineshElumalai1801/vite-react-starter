@@ -8,7 +8,7 @@ pipeline {
         }
         stage ('Docker Run') {
             steps {
-                bat 'docker run -d --name react -p 80:80'
+                bat 'docker run -d --name react -p 80:80 react'
             }
         }
     }
